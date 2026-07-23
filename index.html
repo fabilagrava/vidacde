@@ -18,7 +18,7 @@
   /* ── HERO ── */
   .hero{
     position:relative;
-    min-height:480px;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
@@ -99,9 +99,9 @@
   /* ── INSIGHT ── */
   .sec-insight{
     position:relative;
-    padding:52px 24px;
+    padding:44px 24px;
     overflow:hidden;
-    background:linear-gradient(160deg,#3F71AE,#0F2E4D)
+    background:linear-gradient(190deg,#3F71AE 0%,#1F4B78 30%,#0F2E4D 60%,#07192e 100%)
   }
   .sec-insight-glow{
     position:absolute;
@@ -136,13 +136,13 @@
   }
   .accent-orange{color:#EA670D;font-weight:700}
   .accent-white{color:#fff;font-weight:700}
+  .insight-divider{
+    height:1px;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+    margin:26px 0
+  }
 
   /* ── FRASES ── */
-  .sec-frases{
-    position:relative;
-    padding:52px 24px;
-    background:linear-gradient(160deg,#0F2E4D,#07192e)
-  }
   .frase-row{
     display:flex;
     gap:14px;
@@ -395,26 +395,18 @@ src="https://www.facebook.com/tr?id=1761520314998636&ev=PageView&noscript=1"
     <span class="hero-scroll">SCROLL</span>
   </section>
 
-  <!-- SECCIÓN 2 — EL INSIGHT -->
+  <!-- SECCIÓN 2 — EL INSIGHT + FRASES (unificado) -->
   <section id="insight" class="sec-insight">
     <div class="sec-insight-glow"></div>
     <div class="glass-card">
-      <p class="eyebrow">EL INSIGHT</p>
       <h2 class="sec-title">¿Conoces el<br><span class="accent-orange">Síndrome del logro?</span></h2>
-      <p class="sec-body">Perseguir metas libera dopamina. Al alcanzarlas, cae — y <span class="accent-white">aparece el vacío.</span> Es esa sensación de haber llegado a donde querías... y sentir que algo sigue faltando.</p>
-    </div>
-  </section>
-
-  <!-- SECCIÓN 3 — LAS FRASES -->
-  <section class="sec-frases">
-    <div class="glass-card">
+      <p class="sec-body">Perseguir metas libera dopamina. Al alcanzarlas, cae — y <span class="accent-white">aparece el vacío.</span></p>
+      <div class="insight-divider"></div>
       <p class="eyebrow">¿TE SUENA FAMILIAR?</p>
       <h2 class="sec-title" style="font-size:22px;margin-bottom:22px">Lo que sientes, pero no dices en voz alta:</h2>
       <div class="frase-row"><span class="frase-num">01</span><p class="frase-text">«Llegué a donde quería llegar… ¿y esto es todo?»</p></div>
       <div class="frase-row"><span class="frase-num">02</span><p class="frase-text">«Tengo todo y sigo sintiéndome solo.»</p></div>
-      <div class="frase-row"><span class="frase-num">03</span><p class="frase-text">«Hago todo bien. ¿Por qué no soy feliz?»</p></div>
-      <div class="frase-row"><span class="frase-num">04</span><p class="frase-text">«Logré todo. ¿Y ahora qué?»</p></div>
-      <div class="frase-row"><span class="frase-num">05</span><p class="frase-text">«Siento un vacío que no sé explicar.»</p></div>
+      <div class="frase-row"><span class="frase-num">03</span><p class="frase-text">«Siento un vacío que no sé explicar.»</p></div>
     </div>
   </section>
 
